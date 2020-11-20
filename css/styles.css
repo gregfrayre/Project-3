@@ -31,12 +31,7 @@ fieldset{
     width:50%;
     margin: 0 auto;
 }
-/* Form */
-.form{
-    /* width:50%; */
-    margin: 0 auto;
-    
-}
+
 input[type="text"]{
     width: 90%;
     background-color: gainsboro;
@@ -193,4 +188,8 @@ hr.style-eight:after {
     border-radius: 5px;
     border: none;
 }
+
+#zip {
+    max-width: 30%;
+  } 
 }
