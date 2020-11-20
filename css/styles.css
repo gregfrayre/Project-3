@@ -1,7 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     /* margin: 0 auto; */
     font-family: 'Montserrat', sans-serif;
-    
+    /* margin: 0 auto; */
+    /* max-width: 768px; */
+    font-weight: 200;
+    background-color:white;
+    color: #fff;
 }
 fieldset{
     border: none;
@@ -10,32 +18,58 @@ fieldset{
     padding: 0 1em;
     margin: 0 auto;
 }
+p{
+    color: rgb(0, 0, 0);
+}
 
+legend{
+    color: rgb(0, 0, 0);
+}
 /* Main Header */
 .main-header h3{
     text-align: center;
+    color: rgb(0, 0, 0);
 }
 .main-header h1{
-   background-color: gray;
    padding: 20px;
    margin: 0;
    text-align: center;
-   color: white;
+   color: rgb(0, 0, 0);
    text-transform: uppercase;
    font-size: 25px;
+   background-color: gray;
 }
 
 .header-p{
     margin: 0 auto;
     font-size: 12px;
-    color: gainsboro;
+    color: rgb(0, 0, 0);
     width:65%;
 }
 /* Contact */
-.contact{
+/* .contact{
     width:75%;
     margin: 0 auto;
+} */
+
+.contact-info {
+  padding: 50px 50px 35px 50px;
 }
+
+.contact-info .flex-pair {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info label {
+  margin-bottom: 10px;
+}
+
+.contact-info input {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
 
 input[type="text"]{
     width: 90%;
@@ -82,16 +116,20 @@ select[name="city"]{
 }
 
 select[name="state"]{
-    width: 95%;
+    width: 90%;
     background-color: gainsboro;
-    padding:7px;
+    padding: 20px 20px 15px 20px;
+
     border-radius: 5px;
     border: none;
 }
 
+::placeholder {
+  text-align: right;
+}
 
 label{
-    color: rgb(153, 153, 153);
+    color: rgb(0, 0, 0);
 }
 /* HR */
 hr.style-eight {
@@ -176,6 +214,9 @@ hr.style-eight:after {
 /* Media Query */
 
 @media(min-width:768px){
+    .main-header .header-p{
+    text-align: center;
+}
     textarea{
         width: 100%;
     }
@@ -195,7 +236,30 @@ hr.style-eight:after {
     border: none;
 }
 
+  .contact-info .flex-pair {
+    flex-direction: row;
+  }
+  .contact-info input {
+    flex-grow: 1;
+    flex-basis: 75%;
+  }
+  .contact-info label {
+    flex-basis: 25%;
+    height:50px;
+    margin: auto 0;
+  }
+
+  
+
 #zip {
     max-width: 30%;
   } 
+
+  select[name="state"]{
+    width: 75%;
+    background-color: gainsboro;
+    padding: 20px 20px 15px 20px;
+    border-radius: 5px;
+    border: none;
+}
 }

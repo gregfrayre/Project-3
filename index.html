@@ -23,35 +23,44 @@
 
     <form action="index.html">
 
-        <fieldset class="contact">
-            <legend>Contact Information:</legend><br>
-
-            <label for="fname">Full Name:</label><br>
-            <input type="text" placeholder="required" id="fname" name="fname" required><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" placeholder="required" id="email" name="email" required><br>
-
-            <label for="phone">Phone Number:</label><br>
-            <input id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" type="tel"><br>
-
-            <label for="addy">Street Address:</label><br>
-            <input type="text" id="addy" name="addy"><br>
-
-            <label for="city">City:</label><br>
-            <input type="text" id="city" name="city"><br>
-
-            <label for="state">State:</label><br>
-            <select name="state" id="state">
-                <option value="california">California</option>
-                <option value="new-york">New York</option>
-                <option value="nothern-california">Northern California</option>
-                <option value="florida">Florida</option>
-            </select>
-            <br>
-            <label for="zip">Zip</label><br>
-            <input type="number" name="zip" id="zip"><br><br>
+        <fieldset class="contact-info">
+            <legend>Contact Information</legend>
+            <div class="flex-pair">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fname" placeholder="required" required>
+            </div>
+            <div class="flex-pair">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="required" required>
+            </div>
+            <div class="flex-pair">
+                <label for="telephone">Phone Number</label>
+                <input type="tel" id="telephone" name="telephone">
+            </div>
+            <div class="flex-pair">
+                <label for="addy">Street Address:</label><br>
+                <input type="text" id="addy" name="addy"><br>
+            </div>
+            <div class="flex-pair">
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city"><br>
+            </div>
+            <div class="flex-pair">
+                <label for="state">State:</label><br>
+                <select name="state" id="state">
+                    <option value="california">California</option>
+                    <option value="new-york">New York</option>
+                    <option value="nothern-california">Northern California</option>
+                    <option value="florida">Florida</option>
+                </select>
+            </div><br>
+            <div class="flex-pair">
+                <label for="zip">Zip</label><br>
+                <input type="number" name="zip" id="zip">
+            </div>
         </fieldset>
+
+
 
         <hr class="style-one">
         <fieldset class="newsletter">
