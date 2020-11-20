@@ -1,0 +1,196 @@
+body{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+fieldset{
+    border: none;
+}
+
+/* Main Header */
+.main-header h3{
+    text-align: center;
+}
+.main-header h1{
+   background-color: gray;
+   padding: 20px;
+   margin: 0;
+   text-align: center;
+   color: white;
+   text-transform: uppercase;
+   font-size: 25px;
+}
+
+.header-p{
+    text-align: center;
+    font-size: 12px;
+    color: gainsboro;
+}
+/* Contact */
+.contact{
+    width:50%;
+    margin: 0 auto;
+}
+/* Form */
+.form{
+    /* width:50%; */
+    margin: 0 auto;
+    
+}
+input[type="text"]{
+    width: 90%;
+    background-color: gainsboro;
+    padding:6px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="email"]{
+    width: 90%;
+    background-color: gainsboro;
+    padding:6px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="tel"]{
+    width: 90%;
+    background-color: gainsboro;
+    padding:6px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="number"]{
+    width: 90%;
+    background-color: gainsboro;
+    padding:6px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus {
+  border: 3px solid #0688fa;
+}
+
+select[name="city"]{
+    width: 95%;
+    background-color: gainsboro;
+    padding:7px;
+    border-radius: 5px;
+    border: none;
+}
+
+select[name="state"]{
+    width: 95%;
+    background-color: gainsboro;
+    padding:7px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+label{
+    color: rgb(153, 153, 153);
+}
+/* HR */
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    width: 90%;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    width:90%;
+}
+
+hr.style-eight:after {
+    /* content: "§"; */
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+    
+}
+
+
+/* Submit Button */
+.myButton {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:15px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 105px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Copyright */
+
+.copy{
+    color: gainsboro;
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+/* Section 2 */
+
+.newsletter{
+    width:50%;
+    margin: 0 auto;
+}
+
+/* Button */
+
+.button{
+    width:50%;
+    margin: 0 auto; 
+}
+
+
+/* Media Query */
+
+@media(min-width:768px){
+    textarea{
+        width: 100%;
+    }
+    .myButton{
+    width: 100%;
+}
+    .copy{
+        width: 100%;
+        margin: 50px 230px;
+    }
+
+    select[name="state"]{
+    width: 92%;
+    background-color: gainsboro;
+    padding:7px;
+    border-radius: 5px;
+    border: none;
+}
+}
